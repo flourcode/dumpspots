@@ -106,7 +106,7 @@
     function applyCity(c) { if (!c) return; input.value = c.n; sortFrom(c.lat, c.lng, c.n); nearestOil(c.lat, c.lng); }
     input.addEventListener('change', function () { var c = findCity(input.value); if (c) applyCity(c); else smsg.textContent = 'We don\u2019t cover that city yet.'; });
     sorter.querySelector('[data-locate]').addEventListener('click', function () { locate(function (lat, lng) { sortFrom(lat, lng, ''); nearestOil(lat, lng); }, smsg); });
-    var param = new URLSearchParams(location.search).get('city');
+    var param = (location.hash || '').replace(/^#/, '') || new URLSearchParams(location.search).get('city');
     if (param) applyCity(CITIES.filter(function (c) { return c.s === param; })[0]);
   }
 })();

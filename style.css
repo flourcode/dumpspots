@@ -8,7 +8,7 @@ a:hover { text-decoration: underline; }
 :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 4px; }
 header, main, footer { width: 100%; max-width: 640px; margin: 0 auto; padding: 0 20px; }
 header { display: flex; justify-content: space-between; align-items: center; height: 56px; }
-.logo { font-weight: 700; font-size: 19px; color: var(--ink); letter-spacing: -.02em; }
+.logo { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 19px; color: var(--ink); letter-spacing: -.02em; }
 header nav a, footer nav a { color: var(--grey); font-size: 15px; margin-left: 18px; }
 header nav a:first-child, footer nav a:first-child { margin-left: 0; }
 main { padding-top: 24px; padding-bottom: 72px; }

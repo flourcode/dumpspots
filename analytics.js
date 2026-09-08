@@ -1,6 +1,6 @@
 // Google Analytics. Put your GA4 Measurement ID (looks like G-XXXXXXXXXX) between the quotes.
 // This file is on every page, so this is the only line you change.
-var GA_MEASUREMENT_ID = '';
+var GA_MEASUREMENT_ID = 'G-MQ9H368Z60';
 
 (function () {
   if (!GA_MEASUREMENT_ID) return;
