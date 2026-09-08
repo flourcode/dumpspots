@@ -72,3 +72,11 @@ footer { border-top: 1px solid var(--line); padding-top: 22px; padding-bottom: 4
 footer nav { margin-bottom: 12px; }
 @media (min-width: 560px) { .tiles { grid-template-columns: repeat(3, 1fr); } .tiles.small { grid-template-columns: repeat(4, 1fr); } .finder { grid-template-columns: 1fr 1fr; } .finder button[type=submit] { grid-column: 1 / -1; justify-self: start; } .finder .msg { grid-column: 1 / -1; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* used-oil lists */
+details { margin: 8px 0; }
+summary { cursor: pointer; font-weight: 600; padding: 12px 0; border-top: 1px solid var(--line); }
+.spot.oil { padding: 12px 0; }
+.spot.oil .spot-name { font-size: 17px; }
+.spot.oil .spot-meta { margin-bottom: 4px; }
+[data-nearest] h3 { font-size: 17px; margin: 20px 0 4px; }
