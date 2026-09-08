@@ -78,7 +78,7 @@
       items.sort(function (a, b) { return a.dataset.d - b.dataset.d; });
       var ul = document.createElement('ul'); ul.className = 'spots';
       items.forEach(function (li) { ul.appendChild(li); });
-      list.innerHTML = ''; list.appendChild(ul);
+      list.innerHTML = ''; list.appendChild(ul); // county groups collapse into one distance-sorted list
      });
     }
     // Used-oil centers: fetch the list on demand and show the closest 20
